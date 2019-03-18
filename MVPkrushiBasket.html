@@ -1,0 +1,74 @@
+<!Doctype html>
+<html>
+<head>
+  <title>Firbase web basic</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.teal-red.min.css" />
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+  <!--Main Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="index.js"></script>
+   <!-- Compiled and minified CSS -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+   <!-- Compiled and minified JavaScript -->
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo">&nbsp Logo</a>
+          
+        </div>
+    </nav>
+
+    <div class="container">
+        <form class="form-horizontal" action="/action_page.php">
+          <div class="form-group">
+            <label class="control-label col-sm-2" for="email">Product name:</label>
+            <div class="col-sm-10">
+              <input type="text" class="form-control" id="email" placeholder="Enter Product name">
+            </div>
+            <label for="price">Price:</label>
+            <input type="number" id="price">
+            <label for="price">Qt:</label>
+            <input type="number" id="Qt">
+            <label for="sPrice" >Special Price:</label>
+            <input type="number" placeholder="Special Price">
+            <input type="file" id="image">
+          </div>
+         
+
+          
+          <div class="form-group">
+            <div class="col-sm-offset-2 col-sm-10">
+              <button onclick="submitHere()" class="btn btn-default">Submit</button>
+            </div>
+          </div>
+        </form>  
+      
+       
+    </div>
+  
+
+  <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAkwuV_eho9lTL2wX1jQKbrwXJeCqRiCD4",
+    authDomain: "fir-wallpaper-a9372.firebaseapp.com",
+    databaseURL: "https://fir-wallpaper-a9372.firebaseio.com",
+    projectId: "fir-wallpaper-a9372",
+    storageBucket: "fir-wallpaper-a9372.appspot.com",
+    messagingSenderId: "903503539157"
+  };
+  firebase.initializeApp(config);
+</script>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="index.js"></script>
+
+  </body>
+</html>
