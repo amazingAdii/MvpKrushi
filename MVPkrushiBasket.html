@@ -9,7 +9,6 @@
 
   <!--Main Stylesheet -->
   <link rel="stylesheet" href="style.css" />
-  <script src="index.js"></script>
    <!-- Compiled and minified CSS -->
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
@@ -37,8 +36,8 @@
             <label for="price">Qt:</label>
             <input type="number" id="Qt">
             <label for="sPrice" >Special Price:</label>
-            <input type="number" placeholder="Special Price">
-            <input type="file" id="image">
+            <input type="number" placeholder="Special Price" id="sPrice">
+            <input type="file" class="file-select" accept="image/*"/>
           </div>
          
 
@@ -55,18 +54,6 @@
   
 
   <script src="https://www.gstatic.com/firebasejs/5.8.4/firebase.js"></script>
-<script>
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyAkwuV_eho9lTL2wX1jQKbrwXJeCqRiCD4",
-    authDomain: "fir-wallpaper-a9372.firebaseapp.com",
-    databaseURL: "https://fir-wallpaper-a9372.firebaseio.com",
-    projectId: "fir-wallpaper-a9372",
-    storageBucket: "fir-wallpaper-a9372.appspot.com",
-    messagingSenderId: "903503539157"
-  };
-  firebase.initializeApp(config);
-</script>
   <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
   <script src="index.js"></script>
 
